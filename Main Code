@@ -1,0 +1,40 @@
+nomen = input ("(A wise looking man comes up to you.)\nWhat is your name, traveler?\n")
+print("Well " + nomen + ", my name is MERLOCK THE GREAT™️.\n(The name echos around the hallowed halls)")
+
+
+
+choice_1 = input("(Merlock the Great™️ smiles at you.)\n Well, Look around!\n(You follow his instruction and observe your surroundings. you are currently in what seems to be the inside of a large tree. There is also a small door to the north.)\n" + nomen + ", would you like to go on an adventure?\n(y/n)\n")
+if choice_1 == ("n"):
+    print("(Merlock the Great™️ electrocutes you with his staff. You are now dead.)")
+elif choice_1 == ("y"):
+    print("(Merlock the Great™️ smiles at you, picks you up and throws you out the small door to the north.)")
+    choice_2 = input("(You stand up and look around. You hear the click of the door locking behind you and some incoherent mumbling. There is a path to the east and a path to the west. Where do you want to go?)\n(e/w)\n")
+if choice_2 == "e":
+    troll_steal = input("(You go to the east and discover a troll encampment. Do you want to try to silently steal some stuff from them or continue on your path?)\n(s/c)")
+elif choice_2 == "w":
+    print("(You go to the west and see a computer. You take the computer back home as a great treasure and show it off to all your friends).\n(You become rich and famous, and create a web browser called Google™️.)")
+if troll_steal=="s":
+    sword = input("(You sneak around the troll's campfire, staying in the silvan shadows. Suddenly, you spot a small sword. Would you Like to steal it?)\n (y/n)\n")
+elif troll_steal == "c":
+    print("(You start to tiptoe past the camp, but step on a twig. And it's a well known fact that trolls have impecable hearing. A troll sees you in the shadows and grabs you in one huge, meaty hand.)\n(Before you can even plead for your life, he pops you in his mouth and swallows you whole.)")
+if sword == "y":
+    sword = 1
+    choice_3 = input("(You stuff the small sword into a small sheath secured on your side.)\n(You dash out of the camp undetected. You now see a path to the north and a path to the east.)\n(n/e)")
+elif sword == "n":
+    sword = 0
+    choice_3 = input(" You leave the small sword sitting in a small stash of slimy stomachs[just because].)\n(You dash out of the camp undetected. You now see a path to the north and a path to the east.)\n(n/e)")
+if choice_3 == "n":
+    fight = input ("(You follow the path northward to a mighty dragon's lair. You see the dragon sleeping on a hoard of gold inside a cave. Do you want to fight him or try to befriend him?)\n(f/b)")
+elif choice_3 == "e":
+    print("(You see a small doorway standing in the middle of the forrest. You walk over to it, and the groundbeneath your feet opens up, swallowing you whole.)")
+if fight == "f":
+    if sword == 1:
+        print("(You draw your sword and slay the mighty beast in its slumber. You now own a great hoard of gold, but feel quite lonely.)")
+    elif sword == 0:
+        print("You run to the mountain of treasure - but realize that you have no weapon to fight with! You try punching the dragon, but that only stirs it.\nWhat were you THINKING?!? PUNCHING A HUGE STINKIN' DRAGON?!?!? WHY?!?!?!?\n'That tickled,'says the HUGE INVULNERABLE DRAGON. Honestly, I just... I just don't understand you. Needless to say, the dragon burns you to a crisp.")
+elif fight == "b":
+    if sword == 1:
+        print("(The dragon stirs, and thankfully in a good mood. You and the dragon become best friends, sharing the gold wisely and protecting eachother as siblings would.)")
+    elif sword == 0:
+        print("(The dragon awakens, but is a bit hangry. Thankfully, you are the perfect snack.*NOM NOM*)")
+print("(You suddenly awaken in your own bed, quite frazzled from that incredible dream.)")
